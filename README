@@ -1,0 +1,79 @@
+libssh
+------------------------------------------
+The ssh library was designed to be used by programmers needing a working
+SSH implementation by the mean of a library. The complete control of the
+client is made by the programmer. With libssh, you can remotely execute
+programs, transfer files, use a secure and transparent tunnel for your
+remote programs. With its Secure FTP implementation, you can play with
+remote files easily, without third-party programs others than libcrypto
+(from openssl).
+
+Runtime requirements:
+  cygwin-1.5.20-1 (20060529 snapshot or later)
+  openssl-0.9.8a-1
+  zlib-1.2.3-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.20-1 (20060529 snapshot or later)
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.2.0-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.22-1
+  make-3.80-1
+  sed-4.1.4-1
+
+Canonical website:
+  http://0xbadc0de.be/wiki/doku.php?id=libssh:libssh
+
+Canonical download:
+  http://0xbadc0de.be/libssh/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libssh-0.11-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libssh-0.11-X.cygport all
+
+This will create:
+  /usr/src/libssh-0.11-X-src.tar.bz2
+  /usr/src/libssh-0.11-X.tar.bz2
+  /usr/src/libssh0-0.11-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the main package:
+
+  /usr/include/libssh/config.h
+  /usr/include/libssh/crypto.h
+  /usr/include/libssh/libssh.h
+  /usr/include/libssh/server.h
+  /usr/include/libssh/sftp.h
+  /usr/lib/libssh.dll.a
+  /usr/lib/libssh.la
+  /usr/share/doc/Cygwin/libssh-0.11.README
+  /usr/share/doc/libssh-0.11/AUTHORS
+  /usr/share/doc/libssh-0.11/COPYING
+  /usr/share/doc/libssh-0.11/INSTALL
+  /usr/share/doc/libssh-0.11/README
+
+Files included in the devel package:
+
+  /usr/bin/cygssh-0.dll
+
+------------------
+
+Port Notes:
+
+----- version 0.11-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
