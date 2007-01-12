@@ -1,5 +1,5 @@
 category: Libs
-requires: cygwin openssl zlib
+requires: cygwin libgetaddrinfo0 openssl zlib
 external-source: libssh
 sdesc: "SSH implementation library (runtime)"
 ldesc: "The ssh library was designed to be used by programmers needing a

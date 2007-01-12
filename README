@@ -9,22 +9,23 @@ remote files easily, without third-party programs others than libcrypto
 (from openssl).
 
 Runtime requirements:
-  cygwin-1.5.20-1 (20060529 snapshot or later)
-  openssl-0.9.8a-1
-  zlib-1.2.3-1
+  cygwin-1.5.23-2
+  libgetaddrinfo0-1.6.3-1
+  openssl-0.9.8d-1
+  zlib-1.2.3-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.20-1 (20060529 snapshot or later)
-  autoconf2.5-2.59-3
-  automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.2.0-1
-  gawk-3.1.5-2
+  cygwin-1.5.23-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.2.8-1
+  gawk-3.1.5-4
   gcc-core-3.4.4-1
-  libtool1.5-1.5.22-1
-  make-3.80-1
-  sed-4.1.4-1
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  sed-4.1.5-2
 
 Canonical website:
   http://0xbadc0de.be/wiki/doku.php?id=libssh:libssh
@@ -35,41 +36,45 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libssh-0.11-X-src.tar.bz2
+  unpack libssh-0.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libssh-0.11-X.cygport all
+  cygport ./libssh-0.2-X.cygport all
 
 This will create:
-  /usr/src/libssh-0.11-X-src.tar.bz2
-  /usr/src/libssh-0.11-X.tar.bz2
-  /usr/src/libssh0-0.11-X.tar.bz2
+  /usr/src/libssh-0.2-X-src.tar.bz2
+  /usr/src/libssh-0.2-X.tar.bz2
+  /usr/src/libssh-devel-0.2-X.tar.bz2
+  /usr/src/libssh2-0.2-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the main package:
 
-  /usr/include/libssh/config.h
+  /usr/share/doc/Cygwin/libssh-0.2.README
+  /usr/share/doc/libssh-0.2/AUTHORS
+  /usr/share/doc/libssh-0.2/COPYING
+  /usr/share/doc/libssh-0.2/INSTALL
+  /usr/share/doc/libssh-0.2/README
+
+(libssh2)
+  /usr/bin/cygssh-2.dll
+
+(libssh-devel)
   /usr/include/libssh/crypto.h
   /usr/include/libssh/libssh.h
   /usr/include/libssh/server.h
   /usr/include/libssh/sftp.h
   /usr/lib/libssh.dll.a
   /usr/lib/libssh.la
-  /usr/share/doc/Cygwin/libssh-0.11.README
-  /usr/share/doc/libssh-0.11/AUTHORS
-  /usr/share/doc/libssh-0.11/COPYING
-  /usr/share/doc/libssh-0.11/INSTALL
-  /usr/share/doc/libssh-0.11/README
-
-Files included in the devel package:
-
-  /usr/bin/cygssh-0.dll
 
 ------------------
 
 Port Notes:
+
+----- version 0.2-1 -----
+Version bump.
 
 ----- version 0.11-1 -----
 Initial release for Cygwin.

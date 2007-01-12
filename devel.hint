@@ -1,5 +1,7 @@
 category: Libs
-sdesc: "SSH implementation library (documentation)"
+requires: cygwin libgetaddrinfo-devel openssl-devel zlib
+external-source: libssh
+sdesc: "SSH implementation library (development)"
 ldesc: "The ssh library was designed to be used by programmers needing a
 working SSH implementation by the mean of a library. The complete
 control of the client is made by the programmer. With libssh, you can
