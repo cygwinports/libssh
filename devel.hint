@@ -1,5 +1,5 @@
 category: Libs
-requires: cygwin libgetaddrinfo-devel openssl-devel zlib
+requires: libgetaddrinfo-devel openssl-devel zlib
 external-source: libssh
 sdesc: "SSH implementation library (development)"
 ldesc: "The ssh library was designed to be used by programmers needing a
