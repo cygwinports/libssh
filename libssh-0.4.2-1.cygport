@@ -1,0 +1,10 @@
+inherit cmake
+
+DESCRIPTION="SSH implementation library"
+HOMEPAGE="http://www.libssh.org/"
+SRC_URI="http://www.libssh.org/files/${P}.tar.gz"
+
+PKG_NAMES="${PN} ${PN}4 ${PN}-common ${PN}-devel"
+libssh4_CONTENTS='usr/bin/cygssh-4.dll'
+libssh_common_CONTENTS='usr/share/doc/'
+libssh_devel_CONTENTS='usr/include/ usr/lib/'
