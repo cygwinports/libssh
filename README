@@ -13,6 +13,7 @@ Runtime requirements:
   libgcc1-4.3.4-3
   libssp0-4.3.4-3
   openssl-0.9.8n-1
+  zlib0-1.2.3-10
 
 Build requirements:
 (besides corresponding -devel packages)

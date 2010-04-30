@@ -1,5 +1,5 @@
 category: Libs
-requires: libssh4 openssl-devel
+requires: libssh4
 external-source: libssh
 sdesc: "SSH implementation library (development)"
 ldesc: "The ssh library was designed to be used by programmers needing a
