@@ -17,9 +17,9 @@ Runtime requirements:
 
 Build requirements:
 (besides corresponding -devel packages)
-  binutils-2.20.51-1
-  cmake-2.8.0-11
-  cygport-0.9.83-1
+  binutils-2.20.51-2
+  cmake-2.8.1-11
+  cygport-0.9.84-1
   gcc4-core-4.3.4-3
   make-3.81-2
 
@@ -32,21 +32,24 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libssh-0.4.2-X-src.tar.bz2
+  unpack libssh-0.4.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libssh-0.4.2-X.cygport all
+  cygport ./libssh-0.4.4-X.cygport all
 
 This will create:
-  /usr/src/libssh-0.4.2-X-src.tar.bz2
-  /usr/src/libssh-common-0.4.2-X.tar.bz2
-  /usr/src/libssh-devel-0.4.2-X.tar.bz2
-  /usr/src/libssh4-0.4.2-X.tar.bz2
+  /usr/src/libssh-0.4.4-X-src.tar.bz2
+  /usr/src/libssh-common-0.4.4-X.tar.bz2
+  /usr/src/libssh-devel-0.4.4-X.tar.bz2
+  /usr/src/libssh4-0.4.4-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
+
+----- version 0.4.4-1 -----
+Version bump.
 
 ----- version 0.4.2-1 -----
 Initial release for Cygwin 1.7.
