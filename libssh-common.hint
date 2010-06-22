@@ -1,4 +1,5 @@
 category: Libs
+external-source: libssh
 sdesc: "SSH implementation library (documentation)"
 ldesc: "The ssh library was designed to be used by programmers needing a
 working SSH implementation by the mean of a library. The complete
