@@ -1,0 +1,15 @@
+connect.c: In function ‘ssh_connect_ai_timeout’:
+connect.c:207:3: error: pointer targets in passing argument 5 of ‘getsockopt’ differ in signedness
+/usr/include/sys/socket.h:47:7: note: expected ‘socklen_t *’ but argument is of type ‘unsigned int *’
+
+--- origsrc/libssh-0.5.2/src/connect.c	2011-09-16 14:57:36.000000000 -0500
++++ src/libssh-0.5.2/src/connect.c	2011-09-26 20:12:10.101408800 -0500
+@@ -159,7 +159,7 @@ static int ssh_connect_ai_timeout(ssh_se
+   int timeout_ms;
+   ssh_pollfd_t fds;
+   int rc = 0;
+-  unsigned int len = sizeof(rc);
++  socklen_t len = sizeof(rc);
+ 
+   enter_function();
+ 
