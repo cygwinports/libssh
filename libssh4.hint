@@ -1,5 +1,5 @@
 category: Net
-requires: libssp0 libopenssl098 zlib0 libssh-common
+requires: libssp0 libopenssl100 zlib0 libssh-common
 external-source: libssh
 sdesc: "SSH implementation library (runtime)"
 ldesc: "The ssh library was designed to be used by programmers needing a
