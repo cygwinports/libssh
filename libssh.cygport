@@ -1,0 +1,24 @@
+inherit cmake
+
+NAME="libssh"
+VERSION=0.5.3
+RELEASE=1
+CATEGORY="Net"
+SUMMARY="SSH implementation library"
+DESCRIPTION="The ssh library was designed to be used by programmers needing a
+working SSH implementation by the mean of a library. The complete
+control of the client is made by the programmer. With libssh, you can
+remotely execute programs, transfer files, use a secure and transparent
+tunnel for your remote programs. With its Secure FTP implementation, you
+can play with remote files easily, without third-party programs others
+than libcrypto (from openssl)."
+HOMEPAGE="http://www.libssh.org/"
+SRC_URI="https://red.libssh.org/attachments/download/38/libssh-${VERSION}.tar.gz"
+
+PKG_NAMES="${PN}4 ${PN}-common ${PN}-devel"
+libssh4_REQUIRES="libssh-common"
+libssh4_CONTENTS='usr/bin/*-4.dll'
+libssh_common_CONTENTS='usr/share/doc/'
+libssh_devel_CONTENTS='usr/include/ usr/lib/'
+
+CYGCMAKE_ARGS="-DWITH_FPIC=FALSE -DWITH_VISIBILITY_HIDDEN=FALSE"
