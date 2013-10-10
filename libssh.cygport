@@ -1,7 +1,7 @@
 inherit cmake
 
 NAME="libssh"
-VERSION=0.5.4
+VERSION=0.5.5
 RELEASE=1
 CATEGORY="Net"
 SUMMARY="SSH implementation library"
@@ -13,9 +13,9 @@ tunnel for your remote programs. With its Secure FTP implementation, you
 can play with remote files easily, without third-party programs others
 than libcrypto (from openssl)."
 HOMEPAGE="http://www.libssh.org/"
-SRC_URI="https://red.libssh.org/attachments/download/41/libssh-${VERSION}.tar.gz"
+SRC_URI="https://red.libssh.org/attachments/download/51/libssh-${VERSION}.tar.gz"
 
-PKG_NAMES="${PN}4 ${PN}-common ${PN}-devel"
+PKG_NAMES="${NAME}4 ${NAME}-common ${NAME}-devel"
 libssh4_REQUIRES="libssh-common"
 libssh4_CONTENTS='usr/bin/*-4.dll'
 libssh_common_CONTENTS='usr/share/doc/'
