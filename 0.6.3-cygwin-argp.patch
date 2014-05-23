@@ -1,0 +1,14 @@
+--- origsrc/libssh-0.6.3/examples/CMakeLists.txt	2014-03-04 04:14:20.000000000 -0600
++++ src/libssh-0.6.3/examples/CMakeLists.txt	2014-05-23 14:56:26.482094100 -0500
+@@ -11,9 +11,9 @@ include_directories(
+   ${CMAKE_BINARY_DIR}
+ )
+ 
+-if (BSD OR SOLARIS OR OSX)
++if (BSD OR SOLARIS OR OSX OR CYGWIN)
+     find_package(Argp)
+-endif (BSD OR SOLARIS OR OSX)
++endif (BSD OR SOLARIS OR OSX OR CYGWIN)
+ 
+ if (UNIX AND NOT WIN32)
+     add_executable(libssh_scp libssh_scp.c ${examples_SRCS})
